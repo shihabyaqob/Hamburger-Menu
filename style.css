@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+:root {
+    --peimary-color: rgba(35, 68, 78, 0.691);
+    --scondery-color: rgb(245, 166, 19);
+    --overlay-color: rgba(4, 30, 37, 0.858);
+    --menu-speed: 0.7s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    line-height: 1.6rem;
+    font-size: 16px;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#showcase {
+    color: #fff;
+    min-height: 100vh;
+    background-color: var(--peimary-color);
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#showcase:after {
+    content: '';
+    position: absolute;
+    background: url('https://images.pexels.com/photos/1680140/pexels-photo-1680140.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500') no-repeat center center/cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.container {
+    max-width: 960px;
+    padding: 2rem;
+    margin: auto;
+    overflow: hidden;
+}
+
+#showcase .showcase-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+
+}
+
+#showcase h1 {
+    font-size: 4rem;
+    padding: 1rem 0;
+
+}
+
+#showcase p {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--peimary-color);
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.btn:focus {
+    opacity: 0.5;
+    transform: scale(0.9);
+}
